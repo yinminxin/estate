@@ -25,6 +25,16 @@ public class Estate extends BaseEntity {
     private Integer totalRoom;
     @Column(name = "remain_room", columnDefinition = "int(1) NOT NULL COMMENT '剩余房间数'")
     private Integer remainRoom;
+    @Column(name = "thumbnail", columnDefinition = "VARCHAR(500) NOT NULL COMMENT '缩略图'")
+    private String thumbnail;
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
 
     public String getEstateName() {
         return estateName;
